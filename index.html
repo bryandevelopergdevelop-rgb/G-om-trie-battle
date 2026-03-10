@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geometry Fight</title>
+<style>
+body{font-family:Arial;text-align:center;background:#111;color:white;padding:20px;}
+button{background:#2196F3;border:none;padding:15px 30px;font-size:18px;color:white;border-radius:8px;cursor:pointer;}
+#barcontainer{width:80%;margin:20px auto;background:#333;height:25px;border-radius:10px;}
+#bar{width:0%;height:100%;background:#00ff88;border-radius:10px;}
+img{width:120px;}
+ol{text-align:left;display:inline-block;}
+</style>
+<script>
+function startDownload(){
+let width = 0;
+let bar = document.getElementById("bar");
+let id = setInterval(function(){
+width++;
+bar.style.width = width + "%";
+if(width >= 100){
+clearInterval(id);
+window.location.href="Project/geometrie_fight_project.zip";
+}
+},40);
+}
+</script>
+</head>
+<body>
+
+<h1>Geometry Fight</h1>
+<img src="icon.png">
+<p>Download the project and play it with Max2D.</p>
+
+<button onclick="startDownload()">Download Project</button>
+
+<div id="barcontainer"><div id="bar"></div></div>
+
+<h2>How to Play</h2>
+<ol>
+<li>Download the project file.</li>
+<li>Install Max2D on your Android device.</li>
+<li>Open Max2D.</li>
+<li>Tap Import Project.</li>
+<li>Select the downloaded project file.</li>
+<li>Press Play to start the game.</li>
+</ol>
+
+<br><br>
+
+<a href="https://play.google.com/store/search?q=max2d&c=apps">
+<button>Download Max2D</button>
+</a>
+
+<br><br>
+
+<div id="EthereumAds-default"></div>
+<script src="https://ethereumads.com/adviewer.js"></script>
+<script>
+EthereumAds.initAdSlot({
+acceptedCurrencies:["ALL"],
+mediaType:"image_320x50",
+fallback:"default",
+slot:"default",
+address:"0xD7967c75AE74cC21DFE39c58A686B4403c82134F",
+adult:false,
+version:"1.00"
+});
+</script>
+
+</body>
+</html>
